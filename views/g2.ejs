@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Header -->
+  <%- include('layouts/header'); -%>
+  <body>
+    <!-- Navigation-->
+    <%- include('layouts/navbar'); -%>
+    <!-- Main Content-->
+    <main class="mb-4">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+            <form action="/g2" method="post">
+              <fieldset>
+                <legend>Personal Information</legend>
+                <input type="text" placeholder="First Name" name="firstName"/>
+                <input type="text" placeholder="Last Name" name="lastName"/>
+                <input type="text" placeholder="License Number" name="licenseNumber"/>
+                <input type="text" placeholder="Age" name="age"/>
+                <input type="date" placeholder="MM/DD/YYYY" name="birthDate"/>
+              </fieldset>
+              <fieldset>
+                <legend>Car Information</legend>
+                <input type="text" placeholder="Model Name" name="model" />
+                <input type="text" placeholder="YYYY" name="year"/>
+                <input type="text" placeholder="Plate Number" name="plateNumber"/>
+              </fieldset>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer-->
+    <%- include('layouts/header'); -%>
+    <!-- Scripts -->
+    <%- include('layouts/scripts'); -%>
+  </body>
+</html>

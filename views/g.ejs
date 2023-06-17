@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Header -->
+  <%- include('layouts/header'); -%>
+  <body>
+    <!-- Navigation-->
+    <%- include('layouts/navbar'); -%>
+
+    <!-- Page Content-->
+    <form class="frm" id="licenseForm">
+      <fieldset>
+        <legend>Information</legend>
+        <input type="text" placeholder="License Number" name="licenseNumber" />
+        <button id="submit-btn" type="submit">Submit</button>
+      </fieldset>
+    </form>
+    
+    <!-- Footer-->
+    <%- include('layouts/header'); -%>
+    <!-- Scripts -->
+    <%- include('layouts/scripts'); -%>
+
+    <script>
+      const form = document.getElementById('licenseForm');
+      const licenseInfo = document.getElementById('licenseInfo');
+    
+      const btn = document.getElementById("submit-btn");
+      btn.addEventListener("click",function () {
+        console.log("qwert");
+      })
+      
+    </script>
+    
+  </body>
+</html>
